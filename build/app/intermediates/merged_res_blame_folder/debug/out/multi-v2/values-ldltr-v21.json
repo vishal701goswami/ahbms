@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ahbmss\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "C:\\Users\\visha\\StudioProjects\\ahbms\\ahbms\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\argha\\.gradle\\caches\\transforms-3\\cdfaf5cd02133a735d7be8052052b58c\\transformed\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\visha\\.gradle\\caches\\transforms-3\\cdfaf5cd02133a735d7be8052052b58c\\transformed\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
