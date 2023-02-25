@@ -40,7 +40,10 @@ class _MyDrawerState extends State<MyDrawer> {
               margin: const EdgeInsets.only(right: 160),
               decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 32, 41, 86),
-                   border: Border.all(color: const Color.fromARGB(255, 9, 14, 52), style: BorderStyle.solid, width: 3),
+                  border: Border.all(
+                      color: const Color.fromARGB(255, 9, 14, 52),
+                      style: BorderStyle.solid,
+                      width: 3),
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: NetworkImage(
@@ -380,54 +383,55 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
               ),
             ),
-        // add writer    
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context, CupertinoPageRoute(builder: (context) => Details()));
-              },
-              child: Container(
-                height: 70,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: widget.pageName == "Logout" ? color : Colors.white,
-                    borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(15),
-                        bottomLeft: Radius.circular(15))),
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                    top: 8.0,
-                    bottom: 8.0,
-                    left: 15,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.local_post_office,
-                        color:
-                            widget.pageName != "Logout" ? color : Colors.white,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "Add Writer",
-                        style: GoogleFonts.montserrat(
-                          color: widget.pageName != "Logout"
-                              ? color
-                              : Colors.white,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 1,
-                          fontSize: 18,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            if(LocalData.rmID == 0)
+            // add writer
+            // if(LocalData.rmID == 0)
+            //     GestureDetector(
+            //       onTap: () {
+            //         Navigator.push(context, CupertinoPageRoute(builder: (context) => Details()));
+            //       },
+            //       child: Container(
+            //         height: 70,
+            //         width: double.infinity,
+            //         decoration: BoxDecoration(
+            //             color: widget.pageName == "Logout" ? color : Colors.white,
+            //             borderRadius: const BorderRadius.only(
+            //                 topLeft: Radius.circular(15),
+            //                 bottomLeft: Radius.circular(15))),
+            //         child: Padding(
+            //           padding: const EdgeInsets.only(
+            //             top: 8.0,
+            //             bottom: 8.0,
+            //             left: 15,
+            //           ),
+            //           child: Row(
+            //             mainAxisAlignment: MainAxisAlignment.start,
+            //             crossAxisAlignment: CrossAxisAlignment.center,
+            //             children: [
+            //               Icon(
+            //                 Icons.local_post_office,
+            //                 color:
+            //                     widget.pageName != "Logout" ? color : Colors.white,
+            //               ),
+            //               const SizedBox(
+            //                 width: 10,
+            //               ),
+            //               Text(
+            //                 "Add Writer",
+            //                 style: GoogleFonts.montserrat(
+            //                   color: widget.pageName != "Logout"
+            //                       ? color
+            //                       : Colors.white,
+            //                   fontStyle: FontStyle.normal,
+            //                   letterSpacing: 1,
+            //                   fontSize: 18,
+            //                 ),
+            //               )
+            //             ],
+            //           ),
+            //         ),
+            //       ),
+            //     ),
+
             GestureDetector(
               onTap: () => _showMyDialog(),
               child: Container(
@@ -525,4 +529,3 @@ class _MyDrawerState extends State<MyDrawer> {
     );
   }
 }
-
